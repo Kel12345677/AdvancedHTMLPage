@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://wallup.net/wp-content/uploads/2016/01/44270-comics-Transformers-Optimus_Prime.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff; 
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            background: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(30, 30, 30, 0.8));
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+        header h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+            color: #f0ad4e; 
+            letter-spacing: 2px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                text-shadow: 0 0 10px #f0ad4e, 0 0 20px #f0ad4e;
+            }
+            50% {
+                text-shadow: 0 0 20px #ff5733, 0 0 30px #ff5733;
+            }
+        }
+        
+        nav table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        nav table th, nav table td {
+            text-align: center;
+            padding: 15px;
+            font-size: 1.2em;
+            border: 1px solid #555;
+        }
+        nav table th {
+            background: rgba(0, 0, 0, 0.9);
+            color: #f0ad4e;
+        }
+        nav table td {
+            background: rgba(30, 30, 30, 0.7);
+            transition: all 0.3s ease;
+        }
+        nav table td:hover {
+            background: #d9534f;
+            color: white;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+        form label {
+            font-weight: bold;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+        form button {
+            background: linear-gradient(45deg, #ff5733, #f0ad4e);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+        }
+        form button:hover {
+            background: linear-gradient(45deg, #f0ad4e, #ff5733);
+            transform: scale(1.1);
+        }
+
+        .highlight {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #5bc0de; /* Sky blue */
+            text-shadow: 0 0 10px #5bc0de;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 15px;
+            color: #f0ad4e;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>A Very Cool Form :3</h1>
+        </header>
+        <nav>
+            <table>
+                <tr>
+                    <th>Menu</th>
+                    <th>Links</th>
+                </tr>
+                <tr>
+                    <td>Home</td>
+                    <td><a href="#" style="color: white; text-decoration: none;">Visit Home</a></td>
+                </tr>
+                <tr>
+                    <td>About</td>
+                    <td><a href="#" style="color: white; text-decoration: none;">Learn About Us</a></td>
+                </tr>
+                <tr>
+                    <td>Contact</td>
+                    <td><a href="#" style="color: white; text-decoration: none;">Get in Touch</a></td>
+                </tr>
+            </table>
+        </nav>
+
+        <!-- Contact Form -->
+        <section>
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 Cool HTML. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
